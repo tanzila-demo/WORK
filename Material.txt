@@ -1,0 +1,12 @@
+Short key 
+ctrl + space ----------for location 
+cmd > code . ---------- to open file in VS 
+
+
+
+
+
+display: flex;: Turns the <div> into a flex container.
+justify-content: center;: Horizontally centers the content inside the <div>.
+align-items: center;: Vertically centers the content inside the <div>.
+text-align: center;: Ensures that the text is centered if it wraps to multiple lines.

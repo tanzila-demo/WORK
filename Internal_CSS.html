@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+body
+{
+background-color :azure;
+display: flex;
+justify-content: center;
+align-items: center;
+height : 100vh;
+margin : 0;
+
+}
+
+.form-container
+{
+background-color:white;
+padding: 20px;
+border-radius : 8px;
+ 
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+    
+ <center> <!-- to align the elemnt in center  -->
+        
+       <div style=" height: 2px;  background-color:blueviolet;"> </div>
+<div class="form-container" >
+        <form action="/submit" method="post">
+            <h1> <font color="blue"> login page  </font></h1>
+            <label for="username"></label>User Name
+            <input type="text" id="username" name="username"  placeholder="Enter your name" required>
+            <br><br>
+        
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+        
+           
+            <!-- Submit button -->
+            <input type="submit" value="login">
+          <!-- </form> --> 
+       
+    </div>
+</center>
+    
+</body>
+</html>

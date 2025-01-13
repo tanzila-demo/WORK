@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #faebd7;
+    color: rgb(71, 64, 64);
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.conatiner{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cards{
+display: grid;
+grid-template-columns: repeat(3 , 1fr); 
+gap: 20px;
+}
+
+
+.card{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgb(110, 110, 110);
+    transition:  transform 0.3s ease-in-out;
+    overflow: hidden;
+    background-size: cover;
+    background-position:  center;
+    height: 200px;
+
+    background-image: url('https://rukminim2.flixcart.com/image/850/1000/kgsb1jk0-0/poster/n/h/y/medium-twfnp2-beautiful-waterfall-nature-view-large-size-high-original-imafwy37qv2b5g3v.jpeg?q=20&crop=false');
+
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card-content{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(86, 86, 86);
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.card-content h3{
+margin: 0;
+font-size: 1.1rem ;
+color: rgb(248, 247, 246);
+}
+
+.card-content p{
+   
+    font-size: 0.8rem ;
+    color: rgb(248, 247, 246);
+    }
+    
+/* Media Query */
+
+@media (max-width: 992px){
+    .cards{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .card{
+       background-image: url('https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=');
+    }
+    .card img{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px){
+    .cards{
+        grid-template-columns:  1fr;
+    }
+    .card{
+       background-image: url('https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.webp?b=1&s=612x612&w=0&k=20&c=C318sxgBBIO66E7vi_0Eu3lXHm9uRDauKvRgeyxY2O4=');
+    }
+    .card img{
+        display: none;
+    }
+
+}
+
+@media (max-width: 488px){
+
+    .card{
+       background-image: url('https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg');
+    }
+    .card img{
+        display: none;
+    }
+
+
+    
+.card-content h3{
+    margin: 0;
+    font-size: 0.9rem ;
+    color: rgb(193, 127, 60);
+    }
+    
+    .card-content p{
+       
+        font-size: 0.6rem ;
+        color: rgb(16, 122, 57);
+        }
+}
+   </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h1> Products</h1>
+        <div class="cards">
+            <!-- card 1 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3> Product 1</h3>
+                    <p> this is Product Description</p>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3> Product 2</h3>
+                    <p> this is Product Description</p>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3> Product 3</h3>
+                    <p> this is Product Description</p>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3> Product 4</h3>
+                    <p> this is Product Description</p>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3> Product 5</h3>
+                    <p> this is Product Description</p>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="card">
+                <div class="card-content">
+                    <h3> Product 6</h3>
+                    <p> this is Product Description</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

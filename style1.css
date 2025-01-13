@@ -1,0 +1,34 @@
+th,td
+{
+   
+border :1px solid;
+width:5% ;
+height: 40px ;
+
+}
+table
+{
+    border-collapse: collapse;
+    
+}
+th
+{
+    background-color: aquamarine;
+    border-color: white;
+
+}
+
+td
+{
+    text-align: center;
+    background-color: antiquewhite;
+    border-color: white;
+}
+
+#table_div
+{padding: 10%;
+   background-color: black;
+ justify-items: lefts;   
+    
+
+}

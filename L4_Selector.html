@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+/* Class selector */
+.main-heading {
+    color: blue;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* ID selector */
+#secondary-heading {
+    color: green;
+    font-size: 28px;
+    text-align: left;
+}
+
+/* Type (Element) selector */
+h1 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Decendant selector  */
+div p 
+{
+ border: 3px solid ;
+}
+
+
+
+/* div > p {
+            color: blue;
+            border: 3px solid ;
+        } */
+
+#divider p
+{
+    background-color: #48a11b;
+    border: 2px solid black;
+
+}
+
+#inner_div > h3 {
+    font-size: 20px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+
+    <h1 class="main-heading">Welcome to Hospital Management System</h1>
+    <h1 id="secondary-heading">Patient Report Section</h1>
+    <h1>Other Section</h1>
+
+
+
+
+    <div>
+        <p>This is a direct child paragraph.</p>
+        <section>
+            <p>This is a nested paragraph, not a direct child.</p>
+        </section>
+    </div>
+
+    <div id="inner_div">
+<h3> child heading </h3>
+       
+    </div>
+
+    
+<div>
+    <p id="para">
+ im div para 
+    </p>
+</div>
+
+
+   
+
+
+
+
+    
+</body>
+</html>

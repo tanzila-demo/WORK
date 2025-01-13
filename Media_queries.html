@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+
+
+@media screen and (min-width: 500px)  { /*inside 500 not apply*/ 
+  /* Styles for tablets */
+  body {
+    font-size: 18px;
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (max-width: 500px)  { /*out side 500 not apply*/ 
+  /* Styles for tablets */
+  body {
+    font-size: 18px;
+    background-color: rgb(64, 26, 170);
+    
+  }
+
+  .container
+{
+display: flex;
+flex-flow: column;
+}
+
+}
+
+.container
+{
+display: flex;
+}
+
+.box
+{
+  padding: 20px;
+  background-color: azure;
+  width: fit-content;
+  margin: 10px;
+}
+
+
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  body {
+    font-size: 18px;
+    background-color: lightgreen;
+  }
+} */
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+body
+{
+back:grey;
+
+}
+
+
+table,td,tr{
+    border: 1px solid ;
+    border-collapse: collaps;
+}

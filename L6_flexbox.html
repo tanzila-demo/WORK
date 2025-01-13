@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+ /* each small box */
+
+
+
+
+.container2
+{
+display: flex;
+
+
+}
+.box2 
+{
+border:1px solid;
+height: 200px;
+width: 200px;
+margin:2px;
+ 
+
+} 
+
+.second
+{ 
+    
+    flex-grow: 2;
+
+}
+
+.first
+{ 
+ 
+flex-shrink: 2;
+}
+
+.box 
+{
+border:1px solid;
+height: 20px;
+width: 20px;
+margin:2px;
+margin: 5px;
+
+} 
+
+.container
+{
+
+border:1px solid;   
+display: flex;
+
+
+justify-content: center ;/*align item horizontally  center */ /* along the main start/end*/
+
+/* they both have different properties  */
+
+align-items:center ; /* align item verticaly center  it is only used on container not on single item */ /* along the cross start/end */
+
+/* flex-direction:  column; display other properties */
+
+/* flex-wrap: wrap; */
+
+/* flex-flow: row wrap; */
+/* row-gap: 10px;
+column-gap: 10px; */
+gap: 2px;
+
+/* align-content: center;  when there is multiple line to align  */
+
+
+/* set order item  */
+}
+
+.order1
+{
+    order: 1;
+}
+
+.order3
+{
+    /* align-self: flex-end; */
+    order: 3;
+    
+    
+
+}
+
+.order2
+{ /* align-self: self-start; just align a particular tem */
+    order: 2;
+}
+
+
+
+
+
+</style>
+ 
+</head>
+
+
+<body>
+
+<h1> Flex Box  (display : flex) </h1>
+<hr>
+
+<div class="container" >
+  
+
+    <div class="box order1">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box order2">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box order3" >7</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+ 
+    <span class=""> </span>
+
+</div>
+
+
+<!-- 
+<div class="container2">
+    <div class="box2 first">6</div>
+    <div class="box2 second">7</div>
+    <div class="box2 third">7</div>
+</div> -->
+
+
+    
+</body>
+</html>

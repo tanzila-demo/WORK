@@ -1,0 +1,73 @@
+div
+{
+    background-color: aqua; height:200px ; width: 100px;
+
+}
+
+
+body
+{
+    background-image: url(1.jpg);
+}
+
+.card
+{
+  background-image: url(1.jpg);
+   height:200px ; width: 100px;
+
+}
+
+
+#idname
+{
+
+    background-color: rgb(24, 128, 63); height:200px ; width: 100px;
+
+}
+
+/* decendant selector */
+.card  .myheading
+
+{
+
+color: rgb(214, 214, 29);
+
+}
+
+
+.myheading
+
+{
+
+color: rgb(214, 214, 29);
+
+}
+
+
+#new
+{
+    color: rgb(41, 41, 13);
+
+
+}
+
+*{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h1
+
+{
+
+font-size: 50px;
+
+}
+
+.anchor
+{
+
+color: rgb(31, 128, 240);
+text-decoration: none;
+
+}

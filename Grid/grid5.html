@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            padding: 30px 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .box {
+            padding: 15px;
+            color: white;
+        }
+
+        .box1 {
+            background-color: black;
+            box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.081);
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+
+        .box2 {
+            background-color: palegoldenrod;
+            color: black;
+            box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.081);
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .box3 {
+            background-color: rgb(142, 83, 0);
+            box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.081);
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .box4 {
+            box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.081);
+            color: black;
+            border: 1px solid rgba(0, 0, 0, 0.166);
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        .box5 {
+            background-color: rgb(100, 0, 0);
+            box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.081);
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h2>Box One</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores dignissimos perferendis magni
+            rerum eum numquam corporis, provident ratione. Esse, ut obcaecati laudantium pariatur itaque, eum optio
+            incidunt soluta culpa corrupti sunt, perferendis reprehenderit id! Suscipit eligendi, sint reiciendis cumque
+            sit, facilis voluptatibus maxime non veniam laboriosam, doloremque iusto. Illo.
+        </div>
+        <div class="box box2">
+            <h2>Box Two</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestias!
+        </div>
+        <div class="box box3">
+            <h2>Box Three</h2>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="box box4">
+            <h2>Box Four</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur reprehenderit odio in error
+            repudiandae autem quibusdam iste assumenda fugiat voluptate nam non fuga architecto distinctio ad dolore,
+            culpa beatae accusamus.
+        </div>
+        <div class="box box5">
+            <h2>Box Five</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae quo quod vel quam, blanditiis odit
+                maxime temporibus veritatis explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae quo quod vel quam, blanditiis odit
+                maxime temporibus veritatis explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae quo quod vel quam, blanditiis odit
+                maxime temporibus veritatis explicabo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias.</p>
+        </div>
+    </div>
+</body>
+
+</html>
