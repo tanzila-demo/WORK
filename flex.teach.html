@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .container {
+            border: 2px solid;
+            /* width: 400px; */
+            height: 400px;
+display: flex;
+
+ justify-content: center; /* center element  on X axis  (horizontally ) */
+align-items: center; /*  center element  on y axis   (vertically )*/
+ /* create space between */
+/*  flex-wrap: wrap;
+ flex-direction: row-reverse; */
+
+ flex-flow: row-reverse wrap;   /*  sumup of  flex-direction , flex-direcrtion */
+
+ gap: 10px;
+ column-gap: 70px;
+
+
+
+
+
+
+        }
+
+        .box {
+
+            border: 2px solid;
+            /* width: 50px; */
+            /* height: 20px; */
+            flex-shrink: 1;
+           
+
+        }
+
+.box1 
+{
+
+background-color: blueviolet;
+
+
+
+}
+
+    </style>
+
+
+    <!-- div.container>div.box*5  -->
+    <div class="container">
+        <div class="box box1 ">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
