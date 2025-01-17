@@ -17,19 +17,45 @@ width: 100px;
 flex-shrink: 1;
 flex-grow: 2;
 
+height: 20px;
+order: 3;
+
 }
 
 .box1
 {
 flex-shrink: 2;
 flex-grow: 1;
+order: 1;
 
+/* align-self: flex-start; */
+
+}
+
+.box2{
+
+
+/* align-self: self-end; */
+}
+.box3{
+
+
+  
+}
+.box5{
+
+order: 2;
 }
 
 
 .container
 {
 display: flex;
+
+height: 200px;
+border: 2px solid;
+align-items: center;
+
 
 
 
@@ -40,11 +66,18 @@ display: flex;
      <!-- div.container>div.box*5  -->
      <div class="container">
         <div class="box box1 ">box1</div>
-        <div class="box">box2</div>
-        <div class="box">box3</div>
-        <div class="box">box4</div>
-        <div class="box">box5</div>
+        <div class="box box2">box2</div>
+        <div class="box box3" >box3</div>
+        <div class="box  box4">box4</div>
+        <div class="box ">box4</div>
+        <div class="box box5">box5</div>
     </div>
+
+
+    task 
+    <br>
+    align box4 at second(position)
+    and 5 to the top 
  
     
 </body>
